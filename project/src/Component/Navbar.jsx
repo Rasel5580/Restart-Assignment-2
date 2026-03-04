@@ -4,9 +4,9 @@ const Navbar = () => {
   return (
     <div>
       <div className="flex justify-between max-w-290 shadow-2xl items-center pb-2">
-        <h1 className="text-2xl font-bold">CS-Ticket System</h1>
+        <h1 className="md:text-2xl font-bold">CS-Ticket System</h1>
         <div className="flex gap-5 items-center">
-          <ul className="flex gap-5 text-sm font-semibold items-center">
+          <ul className="hidden md:flex gap-5 text-sm font-semibold items-center">
             <a href="">
               <li>Home</li>
             </a>

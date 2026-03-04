@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1001,
+    "title": "Login Issues - Can't Access Account",
+    "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still cannot access the system.",
+    "status": "Open",
+    "priority": "High",
+    "customer": "John Smith",
+    "date": "2024-01-15"
+  },
+  {
+    "id": 1002,
+    "title": "Payment Failed During Checkout",
+    "description": "User reports that payment fails at checkout even though card details are correct.",
+    "status": "In Progress",
+    "priority": "Medium",
+    "customer": "Sarah Johnson",
+    "date": "2024-01-18"
+  },
+  {
+    "id": 1003,
+    "title": "Bug in Dashboard Analytics",
+    "description": "Graphs are not loading properly on the analytics dashboard.",
+    "status": "Open",
+    "priority": "High",
+    "customer": "Michael Brown",
+    "date": "2024-01-20"
+  },
+  {
+    "id": 1004,
+    "title": "Unable to Upload Profile Picture",
+    "description": "Customer cannot upload a profile picture. The system shows an unknown error.",
+    "status": "Open",
+    "priority": "Low",
+    "customer": "Emily Davis",
+    "date": "2024-01-22"
+  },
+  {
+    "id": 1005,
+    "title": "Email Notifications Not Working",
+    "description": "User is not receiving email notifications for updates.",
+    "status": "Open",
+    "priority": "Medium",
+    "customer": "David Wilson",
+    "date": "2024-01-25"
+  },
+  {
+    "id": 1006,
+    "title": "Account Suspended Without Notice",
+    "description": "Customer claims their account was suspended without any prior notification.",
+    "status": "Open",
+    "priority": "High",
+    "customer": "Olivia Martinez",
+    "date": "2024-01-28"
+  },
+  {
+    "id": 1007,
+    "title": "Error 500 on Settings Page",
+    "description": "Internal server error appears when accessing account settings.",
+    "status": "Open",
+    "priority": "High",
+    "customer": "James Anderson",
+    "date": "2024-02-01"
+  },
+  {
+    "id": 1008,
+    "title": "Slow Loading Time",
+    "description": "Application takes too long to load on mobile devices.",
+    "status": "In Progress",
+    "priority": "Medium",
+    "customer": "Sophia Thomas",
+    "date": "2024-02-03"
+  },
+  {
+    "id": 1009,
+    "title": "Password Reset Link Expired",
+    "description": "Password reset link expires immediately after clicking.",
+    "status": "Open",
+    "priority": "Low",
+    "customer": "Daniel Taylor",
+    "date": "2024-02-05"
+  },
+  {
+    "id": 1010,
+    "title": "Data Not Syncing Across Devices",
+    "description": "Customer reports that data is not syncing between web and mobile apps.",
+    "status": "Open",
+    "priority": "High",
+    "customer": "Isabella Moore",
+    "date": "2024-02-07"
+  },
+  {
+    "id": 1011,
+    "title": "Incorrect Billing Amount",
+    "description": "User was charged twice for the same subscription.",
+    "status": "Open",
+    "priority": "High",
+    "customer": "William Jackson",
+    "date": "2024-02-10"
+  },
+  {
+    "id": 1012,
+    "title": "Search Feature Not Working",
+    "description": "Search results are not showing relevant items.",
+    "status": "In Progress",
+    "priority": "Medium",
+    "customer": "Mia White",
+    "date": "2024-02-12"
+  },
+  {
+    "id": 1013,
+    "title": "App Crashes on Startup",
+    "description": "Mobile application crashes immediately after launch.",
+    "status": "Open",
+    "priority": "High",
+    "customer": "Benjamin Harris",
+    "date": "2024-02-14"
+  },
+  {
+    "id": 1014,
+    "title": "Two-Factor Authentication Issue",
+    "description": "User is not receiving OTP for two-factor authentication.",
+    "status": "In Progress",
+    "priority": "Medium",
+    "customer": "Charlotte Clark",
+    "date": "2024-02-16"
+  },
+  {
+    "id": 1015,
+    "title": "Unable to Download Invoice",
+    "description": "Invoice download button is not responding.",
+    "status": "Open",
+    "priority": "Low",
+    "customer": "Henry Lewis",
+    "date": "2024-02-18"
+  }
+]
