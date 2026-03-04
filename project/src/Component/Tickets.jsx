@@ -5,8 +5,10 @@ const Tickets = ({ TicketsPromise }) => {
   const tickets = use(TicketsPromise);
   console.log(tickets);
   return (
-      <div>
-          <h1 className="text-xl font-semibold text-start mt-20">Customers Tickets</h1>
+    <div>
+      <h1 className="text-xl font-semibold text-start mt-20">
+        Customers Tickets
+      </h1>
       <div className="grid grid-cols-3 gap-3">
         {tickets.map((ticket) => (
           <div className="mt-5 px-3 py-3 mx-auto w-full mx-auto inset-shadow-2xs shadow-2xl rounded-lg shadow-gray-300">

@@ -15,11 +15,11 @@ function App() {
     <>
       <Navbar></Navbar>
       <Card></Card>
-      <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
-        
+      <Suspense
+        fallback={<span className="loading loading-spinner loading-xl"></span>}
+      >
         <Tickets TicketsPromise={TicketsPromise}></Tickets>
       </Suspense>
-      
     </>
   );
 }
