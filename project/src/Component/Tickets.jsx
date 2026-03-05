@@ -1,19 +1,24 @@
 import DateIcon from "../assets/calendar-regular.png";
 
-const Tickets = ({ ticket }) => {
+const Tickets = ({ ticket, viewTicket, setViewTicket }) => {
+  const handle = (e) => {
+    e.preventDefault();
+    //console.log(ticket);
+    setViewTicket([...viewTicket, ticket]);
+  };
   return (
     <div>
-      <a href="">
+      <a onClick={(e) => handle(e, ticket)} href="">
         <div className="mt-5 px-3 py-3 w-full h-full mx-auto inset-shadow-2xs shadow-2xl rounded-lg shadow-gray-300">
           <div className="flex justify-between items-center mb-2">
             <h1 className="text-md font-semibold">{ticket.title}</h1>
             <h1
-              className={`text-sm flex items-center gap-1 ${
+              className={`text-sm flex items-center gap-2 whitespace-nowrap ${
                 ticket.status === "Open" ? "bg-green-200" : "bg-amber-200"
               } rounded-full px-2 py-1`}
             >
               <span
-                className={`w-3 h-3 rounded-full ${
+                className={`w-4 h-4 rounded-full ${
                   ticket.status === "Open" ? "bg-green-500" : "bg-amber-500"
                 }`}
               ></span>

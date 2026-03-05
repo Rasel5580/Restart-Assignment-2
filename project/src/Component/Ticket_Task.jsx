@@ -1,34 +1,39 @@
-import React, { use } from "react";
+import React, { use, useState } from "react";
 import Tickets from "./Tickets";
+import Tasks from "./Tasks";
 
-const Ticket_Task = ({ TicketsPromise }) => {
+const Ticket_Task = ({ TicketsPromise, count, setCount }) => {
   const tickets = use(TicketsPromise);
+
+  const [viewTicket, setViewTicket] = useState([]);
+  //console.log(viewTicket);
+
   return (
-    <div className="flex max-w-290 text-xl font-semibold text-start mt-20">
+    <div className="md:flex max-w-290 mx-auto text-xl font-semibold text-start mt-20">
       <div>
         <h1 className="">Customers Tickets</h1>
 
-        <div className=" flex-3 grid grid-cols-2 gap-3">
+        <div className=" md:flex-3 grid md:grid-cols-2 gap-3">
           {tickets.map((ticket) => (
-            <Tickets ticket={ticket}></Tickets>
+            <Tickets
+              key={ticket.id}
+              viewTicket={viewTicket}
+              setViewTicket={setViewTicket}
+              ticket={ticket}
+            ></Tickets>
           ))}
         </div>
-          </div>
-          
-      <div className="flex-1 mx-auto ml-3 items-center">
-              <h1 className="mb-4">Task Status</h1>
-              
-          <div className="w-72 items-center text-center rounded-md inset-shadow-2xs shadow-2xl px-3 py-3 mb-4">
-            <h1 className="text-[18px] mb-2">Payment Failed - Card Declined</h1>
-            <button className="btn bg-[#02A53B] w-full h-10">Complete</button>
-          </div>
-          <div className="w-72 items-center text-center rounded-md inset-shadow-2xs shadow-2xl px-3 py-3">
-            <h1 className="text-[18px] mb-2"> Incorrect Billing Address</h1>
-            <button className="btn bg-[#02A53B] w-full h-10">Complete</button>
-          </div>
-          </div>
-         
       </div>
+      <div>
+        {
+          <Tasks
+            count={count}
+            setCount={setCount}
+            viewTicket={viewTicket}
+          ></Tasks>
+        }
+      </div>
+    </div>
   );
 };
 

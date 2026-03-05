@@ -2,8 +2,8 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div>
-      <div className="flex justify-between max-w-290 shadow-2xl items-center pb-2">
+    <div className="shadow-2xl ">
+      <div className="flex justify-between max-w-290 mx-auto  items-center pb-2">
         <h1 className="md:text-2xl font-bold">CS-Ticket System</h1>
         <div className="flex gap-5 items-center">
           <ul className="hidden md:flex gap-5 text-sm font-semibold items-center">
