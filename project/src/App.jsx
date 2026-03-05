@@ -1,4 +1,6 @@
 import "./App.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Navbar from "./Component/Navbar";
 import Card from "./Component/Card";
 import { Suspense, useState } from "react";
@@ -30,6 +32,7 @@ function App() {
         ></Ticket_Task>
       </Suspense>
       <Footer></Footer>
+      <ToastContainer />
     </>
   );
 }

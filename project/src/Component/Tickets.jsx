@@ -1,4 +1,5 @@
 import DateIcon from "../assets/calendar-regular.png";
+import { toast } from "react-toastify";
 
 const Tickets = ({
   ticket,
@@ -8,6 +9,7 @@ const Tickets = ({
   setCountProgress,
 }) => {
   const handle = (e, ticket) => {
+    toast.success("Ticket Completed!");
     e.preventDefault();
     //console.log(ticket);
     setViewTicket([...viewTicket, ticket]);

@@ -1,3 +1,5 @@
+import { toast } from "react-toastify";
+
 const Tasks = ({
   viewTicket,
   setViewTicket,
@@ -9,6 +11,7 @@ const Tasks = ({
   setCountProgress,
 }) => {
   const handleResolve = (ticket) => {
+    toast.success("Resolved Successfully!")
     const resolveValue = countResolve + 1;
     const progressValue = countProgress - 1;
     setCountProgress(progressValue);
@@ -22,7 +25,7 @@ const Tasks = ({
     setViewTicket(remaining);
   };
   return (
-    <div className="w-fit">
+    <div className="w-fit mt-10">
       <h1 className="mb-1 ml-5">Task Status</h1>
       <p className="text-sm ml-5 mb-4 opacity-70">
         Select a ticket to add to Task Status
