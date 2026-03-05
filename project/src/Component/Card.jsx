@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = ({count}) => {
+const Card = ({ countProgress, countResolve }) => {
   return (
     <div>
       <div className="md:max-w-290 mx-auto md:flex justify-between text-white gap-8 mt-10">
@@ -9,21 +9,21 @@ const Card = ({count}) => {
         "
         >
           <p
-            className="text-xl mb-2
+            className="text-xl text-center mb-2
                     "
           >
             In-Progress
           </p>
-          <p className="text-4xl font-semibold">{ count}</p>
+          <p className="text-4xl font-semibold text-center">{countProgress}</p>
         </div>
         <div className="border-2 md:max-h-220 w-full rounded-2xl md:p-20 p-8 bg-linear-to-tr from bg-green-300 to-green-700">
           <p
-            className="text-xl mb-2
+            className="text-xl mb-2 text-center
                     "
           >
             Resolved
           </p>
-          <p className="text-4xl font-semibold">0</p>
+          <p className="text-4xl font-semibold text-center">{countResolve}</p>
         </div>
       </div>
     </div>

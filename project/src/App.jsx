@@ -12,17 +12,20 @@ const fetchTickets = async () => {
 
 const TicketsPromise = fetchTickets();
 function App() {
-  const [count, setCount] = useState(0);
+  const [countProgress, setCountProgress] = useState(0);
+  const [countResolve, setCountResolve] = useState(0);
   return (
     <>
       <Navbar></Navbar>
-      <Card count={count}></Card>
+      <Card countProgress={countProgress} countResolve={countResolve}></Card>
       <Suspense
         fallback={<span className="loading loading-spinner loading-xl"></span>}
       >
         <Ticket_Task
-          count={count}
-          setCount={setCount}
+          countResolve={countResolve}
+          setCountResolve={setCountResolve}
+          countProgress={countProgress}
+          setCountProgress={setCountProgress}
           TicketsPromise={TicketsPromise}
         ></Ticket_Task>
       </Suspense>

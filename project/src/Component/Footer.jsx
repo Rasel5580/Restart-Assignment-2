@@ -70,10 +70,10 @@ const Footer = () => {
               @CS-TicketSystem
             </li>
             <li className="hover:text-white cursor-pointer transition">
-              @CS-TicketSystem 
+              @CS-TicketSystem
             </li>
             <li className="hover:text-white cursor-pointer transition">
-              @CS-TicketSystem 
+              @CS-TicketSystem
             </li>
             <li className="hover:text-white cursor-pointer transition">
               support@cst.com

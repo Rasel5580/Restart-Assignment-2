@@ -1,10 +1,18 @@
 import DateIcon from "../assets/calendar-regular.png";
 
-const Tickets = ({ ticket, viewTicket, setViewTicket }) => {
-  const handle = (e) => {
+const Tickets = ({
+  ticket,
+  viewTicket,
+  setViewTicket,
+  countProgress,
+  setCountProgress,
+}) => {
+  const handle = (e, ticket) => {
     e.preventDefault();
     //console.log(ticket);
     setViewTicket([...viewTicket, ticket]);
+    const countValue = countProgress + 1;
+    setCountProgress(countValue);
   };
   return (
     <div>
