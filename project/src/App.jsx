@@ -3,6 +3,7 @@ import Navbar from "./Component/Navbar";
 import Card from "./Component/Card";
 import Tickets from "./Component/Tickets";
 import { Suspense } from "react";
+import Ticket_Task from "./Component/Ticket_Task";
 
 const fetchTickets = async () => {
   const res = await fetch("/tickets.json");
@@ -18,7 +19,7 @@ function App() {
       <Suspense
         fallback={<span className="loading loading-spinner loading-xl"></span>}
       >
-        <Tickets TicketsPromise={TicketsPromise}></Tickets>
+        <Ticket_Task TicketsPromise={TicketsPromise}></Ticket_Task>
       </Suspense>
     </>
   );
