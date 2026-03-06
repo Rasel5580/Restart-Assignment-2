@@ -2,6 +2,7 @@ import DateIcon from "../assets/calendar-regular.png";
 import { toast } from "react-toastify";
 
 const Tickets = ({
+  setHideTicket,
   ticket,
   viewTicket,
   setViewTicket,
@@ -15,6 +16,7 @@ const Tickets = ({
     setViewTicket([...viewTicket, ticket]);
     const countValue = countProgress + 1;
     setCountProgress(countValue);
+    setHideTicket((prev) => [...prev, ticket.id]);
   };
   return (
     <div>

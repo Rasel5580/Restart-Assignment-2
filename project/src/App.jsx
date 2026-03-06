@@ -21,7 +21,11 @@ function App() {
       <Navbar></Navbar>
       <Card countProgress={countProgress} countResolve={countResolve}></Card>
       <Suspense
-        fallback={<span className="loading loading-spinner loading-xl"></span>}
+        fallback={
+          <div className="flex justify-center mt-8">
+            <span className="loading loading-spinner loading-xl"></span>
+          </div>
+        }
       >
         <Ticket_Task
           countResolve={countResolve}

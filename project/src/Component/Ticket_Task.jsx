@@ -14,7 +14,8 @@ const Ticket_Task = ({
 
   const [viewTicket, setViewTicket] = useState([]);
   const [showResolved, setShowResolved] = useState([]);
-  //console.log(showResolved);
+  const [hideTicket, setHideTicket] = useState([]);
+  //console.log(hideTicket);
 
   return (
     <div className="md:flex max-w-290 mx-auto text-xl font-semibold text-start mt-20">
@@ -22,18 +23,22 @@ const Ticket_Task = ({
         <h1 className="ml-3 lg:w-full">Customers Tickets</h1>
 
         <div className=" md:flex-2 max-w-220 grid md:grid-cols-2 gap-3">
-          {tickets.map((ticket) => (
-            <Tickets
-              key={ticket.id}
-              showResolved={showResolved}
-              setShowResolved={setShowResolved}
-              countProgress={countProgress}
-              setCountProgress={setCountProgress}
-              viewTicket={viewTicket}
-              setViewTicket={setViewTicket}
-              ticket={ticket}
-            ></Tickets>
-          ))}
+          {tickets
+            .filter((ticket) => !hideTicket.includes(ticket.id))
+            .map((ticket) => (
+              <Tickets
+                tickets={tickets}
+                setHideTicket={setHideTicket}
+                key={ticket.id}
+                showResolved={showResolved}
+                setShowResolved={setShowResolved}
+                countProgress={countProgress}
+                setCountProgress={setCountProgress}
+                viewTicket={viewTicket}
+                setViewTicket={setViewTicket}
+                ticket={ticket}
+              ></Tickets>
+            ))}
         </div>
       </div>
       <div>
