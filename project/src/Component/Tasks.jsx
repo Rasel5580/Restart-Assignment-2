@@ -11,7 +11,7 @@ const Tasks = ({
   setCountProgress,
 }) => {
   const handleResolve = (ticket) => {
-    toast.success("Resolved Successfully!")
+    toast.success("Resolved Successfully!");
     const resolveValue = countResolve + 1;
     const progressValue = countProgress - 1;
     setCountProgress(progressValue);

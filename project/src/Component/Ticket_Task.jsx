@@ -19,7 +19,7 @@ const Ticket_Task = ({
   return (
     <div className="md:flex max-w-290 mx-auto text-xl font-semibold text-start mt-20">
       <div>
-        <h1 className="">Customers Tickets</h1>
+        <h1 className="ml-3 lg:w-full">Customers Tickets</h1>
 
         <div className=" md:flex-2 max-w-220 grid md:grid-cols-2 gap-3">
           {tickets.map((ticket) => (
