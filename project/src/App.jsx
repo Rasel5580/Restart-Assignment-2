@@ -8,7 +8,7 @@ import Ticket_Task from "./Component/Ticket_Task";
 import Footer from "./Component/Footer";
 
 const fetchTickets = async () => {
-  const res = await fetch("/tickets.json");
+  const res = await fetch(`${import.meta.env.BASE_URL}tickets.json`);
   return res.json();
 };
 
